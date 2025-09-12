@@ -1,4 +1,4 @@
-javaclass Main {
+class Main {
   public static void main(String[] args) {
     (new Main()).init();
   }
@@ -7,10 +7,7 @@ javaclass Main {
   // program begins.  
 
   void init(){
-
-      // This is how to print to the console 
-      // in Java.
-      System.out.println("Hello World");
+    System.out.println("Adrian Lai \n 201-06 28th Avenue");
     
   }
 
