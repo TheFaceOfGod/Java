@@ -12,8 +12,12 @@ class Main {
     Calculate the sum of the two numbers and store the 
     calculated sum and then display it.
     
+    
 */
-   
+   int num1 = 200;
+   int num2 = 3000;
+   int num3 = num1+num2;
+   System.out.println(num3);
 
 
 /*  
@@ -23,8 +27,11 @@ class Main {
     calculated sum and then display it.
     
 */
-
-
+    int grade1 = 100;
+    int grade2 = 65;
+    int grade3 = 80;
+    int total = grade1+grade2+grade3;
+    System.out.println(total);
 
 /*  
     Challenge 3:
@@ -33,7 +40,8 @@ class Main {
     Declare and assign values to any new variables
     NOTE: Does it look correct, check with a calculator?
 */
-
+    double average = total/3;
+    System.out.println(average);
 
 
 /*  
@@ -42,8 +50,10 @@ class Main {
     Declare and assign values to any new variables
 
 */
-  
-
+    double A =20;
+    double x =20;
+    double y = A/(x+1); 
+    System.out.println(y);
 /*  
     Challenge 5:
     Using the variables same variables from challenge4 above, write the following equation in EQ2.PNG file in Java, store the result and the display it:
@@ -51,8 +61,8 @@ class Main {
     Declare and assign values to any new variables
 
 */
- 
-
+    double y2 = (2*x*(x+1)*(-x/2))/A;
+    System.out.println(y2);
 
 
 
@@ -64,8 +74,10 @@ class Main {
 
     Declare and assign values to any new variables
 */
- 
-
+    double b = 20;
+    double h = 20;
+    double area = 0.5*b*h;
+    System.out.println(area);
 
 
 
