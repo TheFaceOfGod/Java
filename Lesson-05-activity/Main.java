@@ -98,8 +98,10 @@ class Main {
     are left over after we filled as many baskets of 12 eggs.
 */
     int eggies = 100;
-    int howmany = eggies%12;
+    int howmany = 100/12;
+    int remainder = eggies%12;
     System.out.println(howmany);
+    System.out.println(remainder);
 
 
 
