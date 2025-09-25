@@ -11,14 +11,18 @@ class Main {
 */
   System.out.println("Enter x value:");
   double x = Input.readDouble();
-  double y = Math.pow(x,7);
-  System.out.println(x+"^7 = "+y);
+  double y = 0;
+  y = Math.pow(x,7);
+  System.out.println(y);
 /*  
     Challenge 2:
     1) Create the variables, ask the user for the variable values, write the equation in fileEQ1.1-act6 and display the equation value.
 */
-  
-
+  System.out.println("Enter z value:");
+  double z = Input.readDouble();
+  double q = 0;
+  q = Math.pow(z,3)+5;
+  System.out.println(q);
 /*  
     Challenge 3:
     Create the variables, ask the user for the variable values, write the equation in file EQ2-act6 and display the equation value..
