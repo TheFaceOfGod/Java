@@ -40,7 +40,7 @@ class Main {
     Declare and assign values to any new variables
     NOTE: Does it look correct, check with a calculator?
 */
-    double average = total/3;
+    double average = total/3.0;
     System.out.println(average);
 
 
@@ -50,8 +50,8 @@ class Main {
     Declare and assign values to any new variables
 
 */
-    double A =20;
-    double x =20;
+    double A =20.0;
+    double x =20.0;
     double y = A/(x+1); 
     System.out.println(y);
 /*  
@@ -74,8 +74,8 @@ class Main {
 
     Declare and assign values to any new variables
 */
-    double b = 20;
-    double h = 20;
+    double b = 20.0;
+    double h = 20.0;
     double area = 0.5*b*h;
     System.out.println(area);
 
