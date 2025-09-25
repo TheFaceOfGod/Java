@@ -67,32 +67,43 @@ class Main {
 /*  
     Challenge 6:
     Create the variables, ask the user for the variable values, write the equation g=sin(deg) and display the equation value..
-    
 */
-
-
-
-
+  System.out.println("Enter degree value:");
+  double deg = Input.readDouble();
+  double g = 0;
+  g = Math.sin(deg);
+  System.out.println(g);
 
 /*  
     Challenge 7:
     Create the variables, ask the user for the variable values, write the equation in file EQ5-act6 and display the equation value.
     
 */
-
-
-
-
+  System.out.println("Enter m value:");
+  double m = Input.readDouble();
+  System.out.println("Enter n value:");
+  double n = Input.readDouble();
+  double k = 0;
+  k = Math.pow(m,5)/Math.sqrt(n+1);
+  System.out.println(k);
 /*  
     *** Bonus Challenge ***:
     Create the variables, ask the user for the variable values, write the equation in file Ch-act6 and display the equation value.
 
     HINT: What does the "plus minus: after "-b" mean.
 */
-
-
-
-
+  System.out.println("Enter a value:");
+  double a = Input.readDouble();
+  System.out.println("Enter b value:");
+  double b = Input.readDouble();
+  System.out.println("Enter c value:");
+  double c = Input.readDouble();
+  double answerx1 = 0;
+  double answerx2 = 0;
+  answerx1 = ((-1*b)+Math.sqrt(Math.pow(b,2)-4*a*c))/(2*a);
+  answerx2 = ((-1*b)-Math.sqrt(Math.pow(b,2)-4*a*c))/(2*a);
+  System.out.println(answerx1);
+  System.out.println(answerx2);
 
     // **************************************************
     // **** Don't write any code below here.  ***********
