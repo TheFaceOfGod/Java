@@ -27,7 +27,7 @@ class Main {
 	System.out.println(cV);
   }
   void distance(double x1, double x2, double y1, double y2){
-	double slope=(x2-x1)/(y2-y1);
+	double slope=Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
 	System.out.println(slope);
   }
 }
