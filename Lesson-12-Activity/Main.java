@@ -8,7 +8,7 @@ class Main {
 
   void init(){
    System.out.println(creditCardType("19268402"));
-   System.out.println(pigLatin("cow")); 
+   System.out.println(pigLatin("speak")); 
    System.out.println(nycLocate("11222"));
    System.out.println(getDate("00/00/0000"));
    System.out.println(validatePswd("False?*"));
