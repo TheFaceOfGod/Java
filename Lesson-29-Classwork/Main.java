@@ -8,18 +8,20 @@ class Main {
   void init(){
     dog Toto = new dog();
     Toto.name = "Toto";
+    Toto.bark();
     dog Snoopy = new dog();
     Snoopy.name = "Snoopy";
+    Snoopy.bark();
     dog Poopy = new dog();
     Poopy.name = "Poopy";
-    
+    Poopy.bark();
   }
   class dog{
     String breed;
     int age;
     String name;
     void bark(){
-      System.out.println("Woof woof my name is" + name);
+      System.out.println("Woof woof my name is " + name);
     }
   }
 
