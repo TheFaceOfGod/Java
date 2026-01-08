@@ -13,23 +13,7 @@ class Main {
     Car mycar2 = new Car("Ford", "red", "F150", 2012, 23000.0);
     System.out.println("This car is a "+mycar2.color+" "+mycar2.year+" "+mycar2.brand+" "+mycar2.model+" that is worth $"+mycar2.value);
   }
-  class Car{
-    String brand;
-    String color;
-    String model;
-    int year;
-    double value;
-    Car(String brand, String color, String model, int year, double value){
-      this.brand = brand;
-      this.color = color;
-      this.model = model;
-      this.year = year;
-      this.value = value;
-    }
-    void honk(){
-      
-    }
-  }
+  
 
   
 
