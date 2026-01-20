@@ -13,7 +13,7 @@ class Main {
     System.out.println("The " + rock.itemName + " is " + rock.getPrice() + " dollars");
     CartItem smartboard = new CartItem("smartboard", 300000.00, 2, true);
     System.out.println("The " + smartboard.itemName + " is " + smartboard.getPrice() + " dollars");
-    System.out.println("The total price of your cart is " + (phone.itemPrice+rock.getPrice()+smartboard.getPrice())*1.08675 + " dollars");
+    System.out.println("The total price of your cart is " + (phone.getPrice()+rock.getPrice()+smartboard.getPrice())*1.08675 + " dollars");
     
   }
 
