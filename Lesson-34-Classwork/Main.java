@@ -35,6 +35,9 @@ class Main {
     // add your code here
     for(int i = 0; i < studentList.length; i++){
       print(studentList[i].calculateAvg());
+      if(studentList[i].calculateAvg() > 70){
+        print(studentList[i].calculateAvg());
+      }
     }
 
 
