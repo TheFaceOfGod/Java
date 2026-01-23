@@ -11,8 +11,8 @@ class Main {
     Student[] students = list.getStudentArray();
 
     // add your code below here
-    int failing = 0;
-    int passing = 0;
+    double failing = 0;
+    double passing = 0;
     for(int i = 0; i < students.length; i++){
       Student student = students[i];
       if(student.gpa < 65){
@@ -22,12 +22,12 @@ class Main {
         passing ++;
       }
     }
-    failing = (int)failing;
-    passing = (int)passing;
+    failing = failing;
+    passing = passing;
     print(passing + " students are passing");
     print(failing + " students are failing");
     double percent = 0;
-    percent = failing/students.length;
+    percent = failing/students.length*100;
     print(percent + "% of students are failing");
     
     
