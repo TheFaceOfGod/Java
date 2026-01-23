@@ -13,7 +13,7 @@ class Main {
     // add your code below here
     int failing = 0;
     int passing = 0;
-    for(int i = 0; i < students.length; x++){
+    for(int i = 0; i < students.length; i++){
       Student student = students[i];
       if(student.gpa < 65){
         failing ++;
