@@ -27,7 +27,7 @@ class Main {
     print(passing + " students are passing");
     print(failing + " students are failing");
     double percent = 0;
-    percent = failing/(failing+passing);
+    percent = failing/students.length;
     print(percent + "% of students are failing");
     
     
