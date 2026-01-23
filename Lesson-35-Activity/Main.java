@@ -9,7 +9,21 @@ class Main {
 
     CreateList list=new CreateList("CR101.csv");
     Student[] students = list.getStudentArray();
-    
+
+    // add your code below here
+    int failing = 0;
+    int passing = 0;
+    for(int i = 0; i < students.length; x++){
+      Student student = students[i];
+      if(student.gpa < 65){
+        failing ++;
+      }
+      if(student.gpa >= 65){
+        passing ++;
+      }
+    }
+    print(passing + " students are passing");
+    print(failing + " students are failing");
     
     
     
