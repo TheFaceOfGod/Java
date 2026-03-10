@@ -22,7 +22,7 @@ class Main {
 
      
 		  Database   db =  new  Database("jdbc:sqlite:cr101.db");	
-      sql = "select * from cr101 where studentid = 'student1';";
+      sql = "select * from cr101 where period = '3' and room = '106'";
       queryResult = db.runSQL(sql,"table-auto");
       print(queryResult);
 
