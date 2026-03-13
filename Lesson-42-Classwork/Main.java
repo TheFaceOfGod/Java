@@ -21,7 +21,9 @@ class Main {
       String sql ="";
 
       Database   db =  new  Database("jdbc:sqlite:students.db");	
-      sql = "select * from cr101 limit 10";
+      sql = "insert into cr101(course, section, period, teacher1, room, studentid)
+              values("MCLUB1", 3, 1, "WHOKNOWS", "ROOFTOP", "STUDENT2")
+              select * from cr101 limit 10";
       queryResult = db.runSQL(sql,"table-auto");
       print(queryResult);
 
