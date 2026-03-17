@@ -26,7 +26,8 @@ class Main {
     //sql = "select * from cr101 where studentid = 'STUDENT1200'; delete from cr101 where course = 'ZQCTEDA' and studentid = 1200";
     //sql = "select * from cr101 where teacher1 = 'DOYLE'; update cr101 set room = 213 where teacher1 = doyle and (period = 4 or period = 5);";
     //sql = "select * from cr101 where teacher1 = 'ROFFLER' and section = 1; update cr101 set teacher1 = 'ROFFLER' where teacher1 = 'ARCHETTI' and course = 'MQF44QGF' and section = 1";
-    sql = "select * from cr101 where teacher1 = 'DOYLE'; update cr101 set room = 213 where teacher1 = doyle and (period = 4 or period = 5);";
+    //sql = "select * from cr101 where studentid = 'STUDENT999'; update cr101 set grade = 11 and offclass = '3D9' where studentid = 'STUDENT999'";
+    sql = "select * from cr101 limit 20; insert into cr101(StudentID, Course, Section, Teacher1, Period, Room); values('STUDENT1231', 'MKUFTC6', 1, 'CASTRO', 9, 322)";
     queryResult = db.runSQL(sql,"table-auto");
     print(queryResult);
     
