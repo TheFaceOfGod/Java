@@ -1,18 +1,18 @@
-let data,customers;
+let customers;
 function init(){
   $.ajaxSetup({async: false});
   
-  let link = "https://81a8cb7b-3b64-4eb9-a860-2cd6bc5aaea9-00-3vy1w5fdrx1e5.worf.replit.dev";
+  let link = "https://symmetrical-orbit-g4rq9pwrggjwcwpjv-8500.app.github.dev";
   let route= "/customers"
   customers = $.getJSON(link+route).responseJSON;
-
+  console.log(customers);
   generateCards(customers)
 
 
 }
 
 function generateCards(customers){
-  let centerpanel = document.getElementById("centerpanel");
+  let centerpanel = document.getElementById("mainpanel");
   let build ="";
 
   for(let i=0; i<customers.length; i++){
@@ -28,7 +28,7 @@ function generateCards(customers){
     build += `</div>`;
   }
 
-  // Now inject the build content into the output container
+
   centerpanel.innerHTML = build;
   
 
@@ -38,13 +38,12 @@ function filter(){
   let country = document.getElementById("country").value;
   console.log(country);
 
-  let customerList = []; //create a list of songs searched for
+  let customerList = []; 
   
   for(let i=0; i<customers.length;i++){
-    let customer = customers[i] //get each sog
-    //make sure the list is no
+    let customer = customers[i] 
     if( customer.Country == country ) {
-          //add to the new list
+
           customerList.push(customer);
        }
   }

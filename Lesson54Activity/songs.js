@@ -1,48 +1,28 @@
-
-let data,songs;
-function init(){
+let data,tracks;
+async function init(){
   $.ajaxSetup({async: false});
-  
-  let link = "https://raw.githubusercontent.com/PorchettaEP/JSONFILES/refs/heads/main";
-  let route= "/songs"
-  songs = $.getJSON(link+route).responseJSON;
+  let link = "https://symmetrical-orbit-g4rq9pwrggjwcwpjv-8500.app.github.dev";
+  let route= "/tracks"
+  info = await fetch(link+route);
+  tracks = await info.json();
+  console.log(tracks);
 
-  generateCards(songs);
-
+  cards(tracks);
 }
-
-function generateCards(songs){
+function cards(tracks){
   let output = document.getElementById("mainpanel");
   let build ="";
-  
-  for(let i=0; i<songs.length; i++){
-    let song = songs[i]
-    build += `<div class="card" >`
+  for(let i=0; i<tracks.length; i++){
+    let track = tracks[i];
+    build += `<div class="card" >`;
     build += `<h3> Song Name </h3>`;
-    build += `<p> ${song.Name}</p>`;
+    build += `<p> ${track.Name}</p>`;
     build += `<div> Album </div>`;
-    build += `<div2> ${song.Title} </div2>`;
+    build += `<div> ${track.Title} </div>`;
     build += `<div> Composer </div>`;
-    build += `<div2> ${song.Composer}</div2>`;
-    build += `<hr>`;
+    build += `<div> ${track.Composer}</div>`;
     build += `</div>`;
   }
-
   output.innerHTML = build;
 
-}
-
-function filter(){
-  let name = document.getElementById("songname").value;
-
-  let newSongs = []; 
-  
-  for(let i=0; i<songs.length;i++){
-    let song = songs[i] 
-    if( song.Name == name ) {
-          newSongs.push(song);
-       }
-  }
-  generateCards(newSongs);
-  
 }
