@@ -12,8 +12,7 @@ function init(){
 }
 
 function generateCards(songs){
-  // 1- getelement output
-  let output = document.getElementById("centerpanel");
+  let output = document.getElementById("mainpanel");
   let build ="";
   
   for(let i=0; i<songs.length; i++){
@@ -29,7 +28,6 @@ function generateCards(songs){
     build += `</div>`;
   }
 
-  // Now inject the build content into the output container
   output.innerHTML = build;
 
 }
@@ -37,13 +35,11 @@ function generateCards(songs){
 function filter(){
   let name = document.getElementById("songname").value;
 
-  let newSongs = []; //create a list of songs searched for
+  let newSongs = []; 
   
   for(let i=0; i<songs.length;i++){
-    let song = songs[i] //get each sog
-    //make sure the list is no
+    let song = songs[i] 
     if( song.Name == name ) {
-          //add to the new list
           newSongs.push(song);
        }
   }
