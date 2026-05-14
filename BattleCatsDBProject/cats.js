@@ -1,4 +1,4 @@
-let data,cats;
+let cats;
 function init(){
   $.ajaxSetup({async: false});
   
@@ -10,7 +10,7 @@ function init(){
   console.log(cats);
 }
 
-function generateCards(customers){
+function generateCards(cats){
   let centerpanel = document.getElementById("centerpanel");
   let front = "";
   let back = "";
@@ -29,21 +29,3 @@ function generateCards(customers){
 
 }
 
-function filter(){
-  let country = document.getElementById("country").value;
-  console.log(country);
-
-  let customerList = []; //create a list of songs searched for
-  
-  for(let i=0; i<customers.length;i++){
-    let customer = customers[i] //get each sog
-    //make sure the list is no
-    if( customer.Country == country ) {
-          //add to the new list
-          customerList.push(customer);
-       }
-  }
-  console.log(`number found ${customerList.length}`)
-  generateCards(customerList);
-  
-}
