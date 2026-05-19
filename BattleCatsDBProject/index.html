@@ -9,17 +9,17 @@
     
     <link href="components.css" rel="stylesheet" type="text/css" />
     <script src="components.js"></script>
-    <script src="https://ajax.googleapis.comZ/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="cats.js"></script>
 
   </head>
   
-  <!-- Call the int function when website loads -->
-  <body>
+  <!-- Call the init function when website loads -->
+  <body onload="init()">
     <div>
       <!--  Header or Banner -->
       <div id="header">
-        <h1> Lesson 55 Classwork</h1>
+        <h1>THE BATTLE CATS</h1>
       </div>
       <!--  nav bar -->
       <nav id='nav'>
@@ -29,7 +29,9 @@
 
 
       </nav>
-      
+      <input style="flex:2;text-align:right;" type="text" 
+                id="catName" placeholder="Enter name of cat" >   
+           <a class="button" onclick="filter()"> Search </a><br>
       <div class="container">
         
 

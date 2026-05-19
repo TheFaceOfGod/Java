@@ -46,14 +46,16 @@ class Main {
 
     String sql2 = "";
     String queryResult2 ="";
-    server.createContext("/cats", new RouteHandler(db,sql) );
     sql = "select * from catTable";
     queryResult = db.runSQL(sql,"table-auto");
+
+    sql2 = "select * from enemyTable";
+    queryResult2 = db2.runSQL(sql2,"table-auto");
+
+    server.createContext("/cats", new RouteHandler(db,sql) );
     print(queryResult);
     
     server.createContext("/enemies", new RouteHandler(db2,sql2) );
-    sql2 = "select * from enemyTable";
-    queryResult2 = db2.runSQL(sql2,"table-auto");
     print(queryResult2);
       
     //Start the server
