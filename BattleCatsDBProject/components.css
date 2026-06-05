@@ -78,6 +78,7 @@
 }
 
 .flip-card {
+  flex:1;
   background: white;
   border-radius: 16px;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
@@ -91,6 +92,8 @@
   -webkit-transform-style: preserve-3d;
   margin:10px;
   padding:10px;
+  min-width:300px;
+  min-height:400px;
 }
 
 .flip-front, .flip-back {

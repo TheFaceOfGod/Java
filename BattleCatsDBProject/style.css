@@ -21,6 +21,7 @@ div{
 
 .container{
   display:flex;
+  flex:1;
   flex-wrap: wrap;
   text-align: center;
   border: solid 2px black;
@@ -33,12 +34,18 @@ div{
   min-height:500px;
   background-color:Gold;
 }
+
 #centerpanel{
-  flex:3;
-  text-align: center;
-  border: solid 2px black;
-  min-height:500px;
-  background-color:Plum;
+  display:flex;
+  flex-wrap:wrap;
+  flex:1;
+  justify-content:center;
+  align-items:flex-start;
+  gap:20px;
+  background-image:url("catgameimages/pronos.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
 }
 #foot{
   border: solid 2px black;
@@ -46,14 +53,18 @@ div{
 }
 
 .card{
-  /*flex:1;   THIS SQUISHES */
-  /*flex-basis:150px   */
-  width:450px;
-  margin:5px;
-  padding:5px;
+  width:500px;
+  height:500px;
+  padding:10px;
   border:1px solid black;
-  text-align:center;
   background-color:#dedfe7;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  box-sizing:border-box;
+  overflow:hidden;
 }
 /* target all h4 elements*/
 h4{
@@ -74,15 +85,16 @@ h4{
   font-family:verdana;
   font-style:italic;
 }
-.card di2{
+.card div{
   font-size:17px;
   color: black;
   font-family:verdana;
   font-style:italic;
 }
 .card img{
-  width:75px;
-  height:75px;
+  width:100px;
+  height:100px;
+  object-fit:contain;
 }
 .button{
   text-decoration:none;

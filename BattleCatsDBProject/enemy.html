@@ -14,12 +14,12 @@
 
   </head>
   
-  <!-- Call the int function when website loads -->
-  <body>
+  <!-- Call the init function when website loads -->
+  <body onload="init()">
     <div>
       <!--  Header or Banner -->
       <div id="header">
-        <h1> Lesson 55 Classwork</h1>
+        <img src="catgameimages/title.png">
       </div>
       <!--  nav bar -->
       <nav id='nav'>
@@ -29,24 +29,27 @@
 
 
       </nav>
-      
+      <input style="flex:2;text-align:right;" type="text" 
+                id="enemyName" placeholder="Enter name of any foe" >   
+           <a class="button" onclick="filter()"> Search </a>
+      <select name="enemyTrait" id="enemyTrait">
+        <option value="Traitless">Traitless</option>
+        <option value="Red">Red</option>
+        <option value="Dark">Dark</option>
+        <option value="Floating">Floating</option>
+        <option value="Red/Floating">Dual Types</option>
+      </select>
+      <a class="button" onclick="filterdrop()"> Search By Trait </a>
+      <hr>
       <div class="container">
-        
+      
 
-        
         <div id='centerpanel' >
+          
 
-          <h3>
-            Enemies
-          </h3>
+       
         </div>
-        
 
-        
-      </div>
-
-      <div id='foot'>
-        <h3> Footer </h3>
       </div>
 
     </div>

@@ -43,3 +43,19 @@ function filter(){
   generateCards(newCats);
   
 }
+function filterdrop(){
+  let name2 = document.getElementById("catRarity").value;
+  console.log(name2);
+
+  let newCats2 = []; 
+  
+  for(let i=0; i<cats.length; i++){
+    let cat = cats[i];
+    if(cat.catRarity == name2){
+          newCats2.push(cat);
+       }
+  }
+  console.log(`number found ${newCats2.length}`)
+  generateCards(newCats2);
+  
+}
